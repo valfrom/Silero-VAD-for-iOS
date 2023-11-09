@@ -29,17 +29,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'git@github.com:tangfuhao/Silero-VAD-for-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.0'
+  # s.ios.deployment_target = '13.0'  
 
   s.source_files = 'Silero-VAD-for-iOS/Classes/**/*'
   s.static_framework = true
-  
+
   s.resource_bundles = {
    'Silero_VAD_for_iOS' => ['Silero-VAD-for-iOS/Assets/**/*.{onnx}']
   }
-  
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'onnxruntime-objc'
+  s.dependency 'onnxruntime-objc', '1.15.0'
 end
